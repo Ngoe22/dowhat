@@ -1,0 +1,177 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f4f6;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 24px;
+  color: #222;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  padding: 12px 16px;
+  background: #eef2ff;
+  border-radius: 10px;
+  color: #333;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.itemDeleteBtn {
+  background: none;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border-color: #6366f1;
+}
+
+.addBtn,
+.randomBtn {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.addBtn {
+  padding: 12px 20px;
+  background: #5fa7e4;
+  color: white;
+}
+
+.addBtn:hover {
+  transform: translateY(-2px);
+}
+
+.randomBtn {
+  width: 100%;
+  padding: 14px;
+  background: #10b981;
+  color: white;
+}
+
+.randomBtn:hover {
+  transform: translateY(-2px);
+}
+
+.result {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  background: #fef3c7;
+  font-size: 24px;
+  font-weight: bold;
+  color: #92400e;
+}
+
+.result {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.rolling {
+  background: #dbeafe;
+  animation: shake 0.12s infinite;
+}
+
+.final {
+  background: #fef3c7;
+  animation: pop 0.4s ease;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(-4px);
+  }
+
+  50% {
+    transform: translateX(4px);
+  }
+
+  100% {
+    transform: translateX(-4px);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.resetBtn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  background: tomato;
+  color: white;
+  transition: 0.2s;
+}
+
+.resetBtn:hover {
+  transform: translateY(-2px);
+}
