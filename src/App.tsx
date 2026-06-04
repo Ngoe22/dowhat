@@ -71,34 +71,36 @@ function App() {
                 placeholder="Enter option"
             />
 
-            <button
-                className={styles.addBtn}
-                onClick={() => {
-                  if (!text.trim()) return;
+            <div  className={styles.btnGroup}>
+                <button
+                    className={styles.addBtn}
+                    onClick={() => {
+                        if (!text.trim()) return;
 
-                  setListToPick([
-                    ...listToPick,
-                    text,
-                  ]);
+                        setListToPick([
+                            ...listToPick,
+                            text,
+                        ]);
 
-                  setText("");
-                }}
-            >
-              Add
-            </button>
+                        setText("");
+                    }}
+                >
+                    Add
+                </button>
 
-            <button
-                className={styles.resetBtn}
-                onClick={() => {
-                  setListToPick([]);
-                  setResults("");
-                  setText("");
-                }}
-            >
-              Reset
-            </button>
+                <button
+                    className={styles.resetBtn}
+                    onClick={() => {
+                        setListToPick([]);
+                        setResults("");
+                        setText("");
+                    }}
+                >
+                    Reset
+                </button>
+            </div>
           </div>
-
+        <hr/>
           <button
               disabled={isRolling}
               className={styles.randomBtn}
